@@ -1,0 +1,13 @@
+theme = "mellifluous-dark"
+[editor]
+true-color = true
+
+[keys.normal.space]
+g = [
+    ":write-all",
+    ":new",
+    ":insert-output lazygit",
+    ":buffer-close!",
+    ":redraw",
+    ":reload-all"
+]

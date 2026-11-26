@@ -1,0 +1,41 @@
+[language-server.lean]
+command = "lake"
+args = ["serve"]
+
+[[language]]
+name = "lean"
+roots = ["lakefile.lean", "lakefile.toml", "lean-toolchain"]
+
+[[language]]
+name = "go"
+formatter = { command = "gofumpt" }
+
+[[language]]
+name = "java"
+formatter = { command = "google-java-format", args = ["-"] }
+
+[[language]]
+name = "typescript"
+formatter = { command = "prettier", args = ["--parser", "typescript"] }
+
+[[language]]
+name = "tsx"
+formatter = { command = "prettier", args = ["--parser", "typescript"] }
+
+[[language]]
+name = "nix"
+language-servers = ["nil"]
+formatter = { command = "nixfmt", args = ["-"] }
+
+[language-server.lace-lsp]
+command = "lace-lsp"
+
+[[language]]
+name = "lace"
+scope = "source.lace"
+file-types = ["lace"]
+roots = [".git"]
+comment-token = ";"
+indent = { tab-width = 2, unit = "  " }
+language-servers = ["lace-lsp"]
+formatter = { command = "lace", args = ["fmt"] }

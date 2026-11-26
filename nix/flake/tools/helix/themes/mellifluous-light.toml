@@ -1,0 +1,142 @@
+# Mellifluous light for Helix
+# Palette: https://github.com/ramojus/mellifluous.nvim/tree/ec0575bdb63594c5e7fba6eb9607b009aa1fb74e
+# MIT License
+#
+# Copyright (c) 2024 Ramojus Lapinskas
+#
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to deal
+# in the Software without restriction, including without limitation the rights
+# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+# copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+#
+# The above copyright notice and this permission notice shall be included in all
+# copies or substantial portions of the Software.
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+# SOFTWARE.
+
+"comment" = { fg = "Comment.fg", modifiers = ["italic"] }
+"constant" = { fg = "Constant.fg" }
+"constant.character" = { fg = "String.fg" }
+"string" = { fg = "String.fg" }
+"string.regexp" = { fg = "Special.fg" }
+"constant.character.escape" = { fg = "Special.fg" }
+"variable" = { fg = "Identifier.fg" }
+"variable.builtin" = { fg = "Constant.fg" }
+"variable.parameter" = { fg = "Identifier.fg" }
+"type" = { fg = "Type.fg" }
+"constructor" = { fg = "Type.fg" }
+"label" = { fg = "Keyword.fg" }
+"module" = { fg = "@module.fg" }
+"namespace" = { fg = "@module.fg" }
+"keyword" = { fg = "Keyword.fg" }
+"keyword.control" = { fg = "Conditional.fg" }
+"keyword.control.repeat" = { fg = "Repeat.fg" }
+"keyword.control.return" = { fg = "@keyword.return.fg" }
+"keyword.directive" = { fg = "PreProc.fg" }
+"operator" = { fg = "Operator.fg" }
+"punctuation" = { fg = "Delimiter.fg" }
+"punctuation.special" = { fg = "Special.fg" }
+"function" = { fg = "Function.fg" }
+"function.macro" = { fg = "PreProc.fg" }
+"tag" = { fg = "Special.fg" }
+"attribute" = { fg = "PreProc.fg" }
+"special" = { fg = "Special.fg" }
+"markup.heading" = { fg = "Function.fg", modifiers = ["bold"] }
+"markup.bold" = { modifiers = ["bold"] }
+"markup.italic" = { modifiers = ["italic"] }
+"markup.strikethrough" = { modifiers = ["crossed_out"] }
+"markup.link" = { fg = "@markup.link.url.fg", modifiers = ["underlined"] }
+"markup.quote" = { fg = "Comment.fg", modifiers = ["italic"] }
+"markup.list" = { fg = "Keyword.fg" }
+"markup.raw" = { fg = "String.fg" }
+"diff.plus" = { fg = "green", bg = "DiffAdd.bg" }
+"diff.minus" = { fg = "red", bg = "DiffDelete.bg" }
+"diff.delta" = { fg = "orange", bg = "DiffChange.bg" }
+"ui.background" = {}
+"ui.text" = { fg = "Normal.fg" }
+"ui.text.focus" = { fg = "Normal.fg", bg = "PmenuSel.bg" }
+"ui.text.inactive" = { fg = "fg3" }
+"ui.gutter" = {}
+"ui.linenr" = { fg = "fg3" }
+"ui.linenr.selected" = { fg = "Keyword.fg", modifiers = ["bold"] }
+"ui.cursorline.primary" = { bg = "CursorLine.bg" }
+"ui.cursor" = { modifiers = ["reversed"] }
+"ui.cursor.primary" = { fg = "Cursor.fg", bg = "Cursor.bg" }
+"ui.cursor.match" = { fg = "Keyword.fg", modifiers = ["underlined"] }
+"ui.selection" = { bg = "Visual.bg" }
+"ui.highlight" = { bg = "Search.bg" }
+"ui.statusline" = { fg = "StatusLine.fg", bg = "StatusLine.bg" }
+"ui.statusline.inactive" = { fg = "fg3", bg = "StatusLine.bg" }
+"ui.statusline.normal" = { fg = "Normal.bg", bg = "functions", modifiers = ["bold"] }
+"ui.statusline.insert" = { fg = "Normal.bg", bg = "green", modifiers = ["bold"] }
+"ui.statusline.select" = { fg = "Normal.bg", bg = "constants", modifiers = ["bold"] }
+"ui.bufferline" = { fg = "StatusLine.fg", bg = "StatusLine.bg" }
+"ui.bufferline.active" = { fg = "Normal.fg", bg = "Normal.bg", modifiers = ["bold"] }
+"ui.popup" = { fg = "Normal.fg" }
+"ui.menu" = { fg = "Normal.fg" }
+"ui.menu.selected" = { fg = "Normal.fg", bg = "PmenuSel.bg" }
+"ui.help" = { fg = "Normal.fg" }
+"ui.window" = { fg = "fg4" }
+"ui.virtual.whitespace" = { fg = "fg4" }
+"ui.virtual.indent-guide" = { fg = "fg4" }
+"ui.virtual.ruler" = { bg = "CursorLine.bg" }
+"ui.virtual.inlay-hint" = { fg = "fg3" }
+"ui.virtual.jump-label" = { fg = "Conditional.fg", modifiers = ["bold"] }
+"error" = { fg = "DiagnosticError.fg" }
+"warning" = { fg = "DiagnosticWarn.fg" }
+"info" = { fg = "DiagnosticInfo.fg" }
+"hint" = { fg = "DiagnosticHint.fg" }
+"diagnostic.error" = { underline = { color = "DiagnosticError.fg", style = "curl" } }
+"diagnostic.warning" = { underline = { color = "DiagnosticWarn.fg", style = "curl" } }
+"diagnostic.info" = { underline = { color = "DiagnosticInfo.fg", style = "curl" } }
+"diagnostic.hint" = { underline = { color = "DiagnosticHint.fg", style = "curl" } }
+
+[palette]
+"@keyword.return.fg" = "#b73242"
+"@markup.link.url.fg" = "#7f67b4"
+"@module.fg" = "#926f4e"
+"Comment.fg" = "#969555"
+"Conditional.fg" = "#b73242"
+"Constant.fg" = "#863e7f"
+"Cursor.bg" = "#a16927"
+"Cursor.fg" = "#e7e7e7"
+"CursorLine.bg" = "#f2f2f2"
+"Delimiter.fg" = "#686868"
+"DiagnosticError.fg" = "#c7414e"
+"DiagnosticHint.fg" = "#a2589a"
+"DiagnosticInfo.fg" = "#7f67b3"
+"DiagnosticWarn.fg" = "#a16927"
+"DiffAdd.bg" = "#dad9b3"
+"DiffChange.bg" = "#e6d2bc"
+"DiffDelete.bg" = "#edc9cd"
+"Function.fg" = "#5a418a"
+"Identifier.fg" = "#1b1b1b"
+"Keyword.fg" = "#a16927"
+"Normal.bg" = "#e7e7e7"
+"Normal.fg" = "#1b1b1b"
+"Operator.fg" = "#686868"
+"PmenuSel.bg" = "#e2e2e2"
+"PreProc.fg" = "#5a418a"
+"Repeat.fg" = "#b73242"
+"Search.bg" = "#d2cab5"
+"Special.fg" = "#a16927"
+"StatusLine.bg" = "#fefefe"
+"StatusLine.fg" = "#414141"
+"String.fg" = "#9c792a"
+"Type.fg" = "#926f4e"
+"Visual.bg" = "#d1d1d1"
+"constants" = "#863e7f"
+"fg3" = "#686868"
+"fg4" = "#919191"
+"functions" = "#5a418a"
+"green" = "#63611e"
+"orange" = "#a16927"
+"red" = "#b73242"

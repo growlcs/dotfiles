@@ -1,0 +1,7 @@
+inherits = "ayu_evolve"
+
+"ui.background" = {}
+
+"ui.menu" = { fg = "foreground" }
+"ui.popup" = { fg = "#7B91b3" }
+"ui.help" = { fg = "#7B91b3" }

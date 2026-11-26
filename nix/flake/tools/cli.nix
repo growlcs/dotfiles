@@ -7,6 +7,7 @@
     jujutsu
     lazygit
     delta
+    glow
     zoxide
     jq
     yq-go

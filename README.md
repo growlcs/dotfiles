@@ -22,7 +22,7 @@ hjem standalone build --flake . --flake-attr hjemConfigurations.default --impure
 ## Tools
 
 - **Helix:** `hx` from the upstream Helix flake, currently at 25.07.1. Edit `config.toml` and `languages.toml` in `nix/flake/tools/helix/`.
-- **CLI:** eza, Nushell, Atuin, Jujutsu (`jj`), Lazygit, Delta, zoxide, jq, Mike Farah's yq, direnv, and nix-direnv. Git comes from the existing system/profile. A separate nixpkgs pin supplies the CLI and language packages. Atuin uses a pinned upstream macOS binary until nixpkgs catches up.
+- **CLI:** eza, Nushell, Atuin, Jujutsu (`jj`), Lazygit, Delta, Glow, zoxide, jq, Mike Farah's yq, direnv, and nix-direnv. Git comes from the existing system/profile. A separate nixpkgs pin supplies the CLI and language packages. Atuin uses a pinned upstream macOS binary until nixpkgs catches up.
 - **Languages:** Rust (rust-analyzer and rustfmt), Zig (ZLS and `zig fmt`), Go (gopls and gofumpt), Java (JDT LS and google-java-format), Lean (Lean 4 and `lake serve`), TypeScript/TSX (TypeScript Language Server and Prettier), and Nix (nil and nixfmt). Lean has no formatter configured.
 - **Rex (macOS):** `rex` runs the CLI bundled with `/Applications/Rex.app`. Install or update the app separately.
 - **Autolith:** tracks the [upstream flake](https://github.com/lambda-symbolics/autolith) without a version in the input URL. Run `nix flake update autolith` to record the latest upstream commit in `flake.lock` before rebuilding.

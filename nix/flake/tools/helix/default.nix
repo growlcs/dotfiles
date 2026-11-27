@@ -41,21 +41,6 @@ in
       source = ./languages.toml;
       target = "${home}/.config/helix/languages.toml";
     }
-    {
-      type = "symlink";
-      source = ./themes/ayu_evolve_transparent.toml;
-      target = "${home}/.config/helix/themes/ayu_evolve_transparent.toml";
-    }
-    {
-      type = "symlink";
-      source = ./themes/living-code-night.toml;
-      target = "${home}/.config/helix/themes/living-code-night.toml";
-    }
-    {
-      type = "symlink";
-      source = ./themes/living-code-adaptive.toml;
-      target = "${home}/.config/helix/themes/living-code-adaptive.toml";
-    }
   ] ++ map (name: {
     type = "symlink";
     source = ./themes + "/${name}.toml";

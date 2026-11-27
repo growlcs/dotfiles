@@ -1,0 +1,8 @@
+--when.environments = ["JJUI"]
+
+[ui]
+diff-formatter = "delta"
+
+[merge-tools.delta]
+diff-args = ["--paging=never", "--width=$width", "$left", "$right"]
+diff-expected-exit-codes = [0, 1]

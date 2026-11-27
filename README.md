@@ -29,6 +29,8 @@ hjem standalone build --flake . --flake-attr hjemConfigurations.default --impure
 
 After Hjem activation, binaries are in `${XDG_STATE_HOME:-$HOME/.local/state}/hjem/standalone/current-profile/bin`.
 
+Run `jjui` inside a Jujutsu workspace for a terminal UI with Delta diff previews. Use `lazygit` in Git repositories.
+
 To use direnv in zsh, add `eval "$(direnv hook zsh)"` to your zsh startup config. With the default config directory, the Hjem-managed nix-direnv script provides `use flake` for trusted `.envrc` files.
 
 ## Lace in Helix
